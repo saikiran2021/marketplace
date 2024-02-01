@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SaaSSubscription - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="introduction.html"><strong>1.</strong> Introduction</a></li><li><a href="UnderstandAWSMarketplace.html"><strong>2.</strong> Understand AWS Marketplace</a></li><li><a href="CreatingAWSAccount.html"><strong>3.</strong> Creating AWS Account</a></li><li><a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html"><strong>4.</strong> Preparing Your SaaS Product for AWS Marketplace Deployment</a></li><li><a href="SetUpSellerAccount.html"><strong>5.</strong> Set Up Seller Account</a></li><li><a href="SaaSSubscription.html" class="active"><strong>6.</strong> SaaSSubscription</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="SaaSSubscription.html#saas-subscription" id="saas-subscription"><h1>SaaS Subscription</h1></a>
+<a class="header" href="SaaSSubscription.html#listing-process" id="listing-process"><h2>Listing Process</h2></a>
+<a class="header" href="SaaSSubscription.html#1-collect-assets" id="1-collect-assets"><h3>1. Collect Assets</h3></a>
+<p>Before submitting a product, you will need to provide:</p>
+<ul>
+<li>Product logo URL</li>
+<li>End User License Agreement (EULA) URL</li>
+<li>SaaS fulfillment URL (redirect page customers will be sent to after subscribing)</li>
+<li>Metadata</li>
+<li>Support information</li>
+</ul>
+<a class="header" href="SaaSSubscription.html#2-submit-via-management-portal" id="2-submit-via-management-portal"><h3>2. Submit via Management Portal</h3></a>
+<p>Create a product page using a seller account that has access to the AWS Marketplace Management Portal (AMMP).</p>
+<a class="header" href="SaaSSubscription.html#3-product-page-published-to-limited" id="3-product-page-published-to-limited"><h3>3. Product Page Published to Limited</h3></a>
+<p>The AWS MP Ops team will publish your submission as a limited product page visible to you and any AWS accounts you have requested to be whitelisted. Prices will be temporarily reduced to enable you to test the purchase flow without incurring high charges. The Ops team will send you the following via email to enable this testing:</p>
+<ul>
+<li>Product code</li>
+<li>SNS topic(s)</li>
+<li>Product page URL</li>
+</ul>
+<a class="header" href="SaaSSubscription.html#integration-requirements" id="integration-requirements"><h2>Integration Requirements</h2></a>
+<a class="header" href="SaaSSubscription.html#4-validate-new-customers" id="4-validate-new-customers"><h3>4. Validate New Customers</h3></a>
+<p>After a customer subscribes to your product, they will be redirected to the fulfillment URL. The redirect is a POST request &amp; includes a temporary token. Your app then needs to:</p>
+<ul>
+<li>Exchange the token for a customerID by calling ResolveCustomer in the AWS Marketplace Metering Service.</li>
+<li>After obtaining a customerID, persist it in your application for future calls.</li>
+</ul>
+<a class="header" href="SaaSSubscription.html#5-onboard-new-customers" id="5-onboard-new-customers"><h3>5. Onboard New Customers</h3></a>
+<p>After successfully verifying a customer, onboard them onto your application. For example, have them fill out a form to create a new user account. Or, provide them with next steps to get access to the application.</p>
+<a class="header" href="SaaSSubscription.html#6-sending-metering-records" id="6-sending-metering-records"><h3>6. Sending Metering Records</h3></a>
+<p>You use the BatchMeterUsage operation in the AWS Marketplace Metering Service to deliver metering records to AWS on behalf of your customers. We recommend using CloudTrail to monitor activity to ensure that billing information is being sent to AWS Marketplace. Keep in mind when sending metering records:</p>
+<ul>
+<li>Marketplace de-duplicates metering requests on the hour.</li>
+<li>Records sent every hour are cumulative.</li>
+<li>Best practice is to send records every hour, even if quantity is 0.</li>
+</ul>
+<a class="header" href="SaaSSubscription.html#7-monitor-for-changes" id="7-monitor-for-changes"><h3>7. Monitor for Changes</h3></a>
+<p>Setup an SQS queue and subscribe to your product's SNS topic. This topic provides notifications about changes to customers' subscription. This enables you to know when to provide and revoke access for specific customers. Possible scenarios include: unsubscribes, successful subscription, &amp; failed subscription.</p>
+<a class="header" href="SaaSSubscription.html#8-verify-successful-subscription" id="8-verify-successful-subscription"><h3>8. Verify Successful Subscription</h3></a>
+<p>After you receive a subscription notification with subscribe-success, the customer account is ready for metering. Records that you send before this notification aren't metered. Additionally, we recommend waiting for this message before launching resources on behalf of a customer.</p>
+<a class="header" href="SaaSSubscription.html#listing-process-continued-after-completion-of-integration" id="listing-process-continued-after-completion-of-integration"><h2>Listing Process (continued after completion of integration)</h2></a>
+<a class="header" href="SaaSSubscription.html#9-end-to-end-testing-with-aws-marketplace" id="9-end-to-end-testing-with-aws-marketplace"><h3>9. End-to-end testing with AWS Marketplace</h3></a>
+<p>After you have completed all the integration requirements and tested the solution, notify the AWS Marketplace Ops team. They will then test the solution by verifying you have successfully sent metered records via BatchMeterUsage and sufficiently onboard new customers. After end-to-end testing is complete, you will have the chance to review the product page with the original prices. After giving approval, the AWS Marketplace Ops team will make the product page live in the public catalog.</p>
+<p><img src="images/AWS%20Marketplace%20-%20SaaS%20Integration%20Guide.pdf.png" alt="architecture" /></p>
+<pre><code>                                SaaS-Subscription
+</code></pre>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="SetUpSellerAccount.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+
+            </div>
+
+            
+                <a href="SetUpSellerAccount.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

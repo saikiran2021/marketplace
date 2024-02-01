@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="introduction.html"><strong>1.</strong> Introduction</a></li><li><a href="UnderstandAWSMarketplace.html"><strong>2.</strong> Understand AWS Marketplace</a></li><li><a href="CreatingAWSAccount.html"><strong>3.</strong> Creating AWS Account</a></li><li><a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html"><strong>4.</strong> Preparing Your SaaS Product for AWS Marketplace Deployment</a></li><li><a href="SetUpSellerAccount.html"><strong>5.</strong> Set Up Seller Account</a></li><li><a href="SaaSSubscription.html"><strong>6.</strong> SaaSSubscription</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="print.html#guide-to-publishing-on-aws-marketplace" id="guide-to-publishing-on-aws-marketplace"><h1>Guide to Publishing on AWS Marketplace</h1></a>
+<a class="header" href="print.html#1-a-hrefunderstandawsmarketplacemdunderstand-aws-marketplacea" id="1-a-hrefunderstandawsmarketplacemdunderstand-aws-marketplacea"><h2>1. <a href="./UnderstandAWSMarketplace.md">Understand AWS Marketplace</a></h2></a>
+<p>Familiarize yourself with the intricacies of AWS Marketplace to ensure a smooth journey through the publishing process. Get acquainted with policies, pricing models, and guidelines. Differentiate between software listing types, including AMIs, SaaS (Software as a Service), and APIs.</p>
+<a class="header" href="print.html#2-a-hrefcreatingawsaccountmdcreating-aws-accounta" id="2-a-hrefcreatingawsaccountmdcreating-aws-accounta"><h2>2. <a href="./CreatingAWSAccount.md">Creating AWS Account</a></h2></a>
+<p>If you haven't already, establish an AWS account. This account is essential for managing your listings and receiving payments for your offerings.</p>
+<a class="header" href="print.html#3-a-hrefpreparingyoursaasproductforawsmarketplacedeploymentmdpreparing-your-saas-product-for-aws-marketplace-deploymenta" id="3-a-hrefpreparingyoursaasproductforawsmarketplacedeploymentmdpreparing-your-saas-product-for-aws-marketplace-deploymenta"><h2>3. <a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.md">Preparing Your SaaS Product for AWS Marketplace Deployment</a></h2></a>
+<p>Ensure your application is ready for deployment on AWS. If it's an infrastructure component, create an AMI. For cloud-native applications, set up a SaaS or API offering.</p>
+<a class="header" href="print.html#4-a-hrefsetupselleraccountmdset-up-seller-accounta" id="4-a-hrefsetupselleraccountmdset-up-seller-accounta"><h2>4. <a href="SetUpSellerAccount.md">Set Up Seller Account</a></h2></a>
+<p>Apply to become a seller on AWS Marketplace by providing information about your company, product, and agreeing to terms and conditions.</p>
+<a class="header" href="print.html#5-a-hrefsaassubscriptionmdsaas-subscriptiona" id="5-a-hrefsaassubscriptionmdsaas-subscriptiona"><h2>5. <a href="SaaSSubscription.md">SaaS Subscription</a></h2></a>
+<a class="header" href="print.html#6-submit-your-product" id="6-submit-your-product"><h2>6. Submit Your Product</h2></a>
+<p>Once your seller account is approved, submit your product for review. AWS will assess its quality and security to ensure compliance with their standards.</p>
+<a class="header" href="print.html#7-define-pricing" id="7-define-pricing"><h2>7. Define Pricing</h2></a>
+<p>Set pricing for your product, choosing from models like hourly, monthly, annual, or a one-time fee. Consider the AWS operational costs when determining pricing.</p>
+<a class="header" href="print.html#8-publish-your-product" id="8-publish-your-product"><h2>8. Publish Your Product</h2></a>
+<p>After approval, publish your product on the AWS Marketplace. Craft a detailed product listing with all necessary information for potential customers.</p>
+<a class="header" href="print.html#9-handle-transactions-and-billing" id="9-handle-transactions-and-billing"><h2>9. Handle Transactions and Billing</h2></a>
+<p>AWS Marketplace manages transactions and billing on your behalf. Receive payments based on the agreed-upon pricing and terms.</p>
+<a class="header" href="print.html#10-customer-support" id="10-customer-support"><h2>10. Customer Support</h2></a>
+<p>Offer excellent customer support by responding promptly to inquiries and assisting with any issues customers may encounter.</p>
+<a class="header" href="print.html#11-optimize-and-promote" id="11-optimize-and-promote"><h2>11. Optimize and Promote</h2></a>
+<p>Continuously optimize your product based on customer feedback. Invest in marketing and promotion to enhance your product's visibility on the AWS Marketplace.</p>
+<a class="header" href="print.html#12-leverage-aws-partner-programs" id="12-leverage-aws-partner-programs"><h2>12. Leverage AWS Partner Programs</h2></a>
+<p>Explore AWS Partner programs that can help promote your product and provide additional benefits, further enhancing your presence on the platform.</p>
+<a class="header" href="print.html#understand-aws-marketplace" id="understand-aws-marketplace"><h1>Understand AWS Marketplace</h1></a>
+<p>AWS Marketplace is a platform provided by Amazon Web Services (AWS) that allows software vendors to sell their products and solutions to AWS customers. Before venturing into AWS Marketplace, it is crucial to comprehend its key aspects:</p>
+<a class="header" href="print.html#overview" id="overview"><h2>Overview</h2></a>
+<p>AWS Marketplace serves as a digital catalog that offers a wide array of software listings, including Amazon Machine Images (AMIs), Software as a Service (SaaS), and Application Programming Interfaces (APIs). This marketplace facilitates the discovery, procurement, and deployment of various software solutions directly from AWS.</p>
+<a class="header" href="print.html#policies-and-guidelines" id="policies-and-guidelines"><h2>Policies and Guidelines</h2></a>
+<p>To navigate AWS Marketplace successfully, it's essential to familiarize yourself with the platform's policies and guidelines. These include compliance standards, security requirements, and best practices to ensure that your products align with AWS standards.</p>
+<a class="header" href="print.html#pricing-models" id="pricing-models"><h2>Pricing Models</h2></a>
+<p>Understand the diverse pricing models available on AWS Marketplace. Vendors can choose from options such as hourly, monthly, annual subscriptions, or one-time fees. Carefully consider the pricing strategy to reflect the value of your product and accommodate AWS usage costs.</p>
+<a class="header" href="print.html#software-listing-types" id="software-listing-types"><h2>Software Listing Types</h2></a>
+<p>Differentiate between various software listing types available on AWS Marketplace. AMIs represent virtual machine images, while SaaS and APIs cater to cloud-native applications. Knowing these distinctions will help you tailor your product to the appropriate listing type.</p>
+<a class="header" href="print.html#aws-account-integration" id="aws-account-integration"><h2>AWS Account Integration</h2></a>
+<p>Before engaging with AWS Marketplace, create an AWS account if you haven't done so already. Your AWS account will serve as the central hub for managing your listings, monitoring performance, and receiving payments for your products.</p>
+<a class="header" href="print.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>A comprehensive understanding of AWS Marketplace is essential for a successful engagement with the platform. By grasping its policies, pricing models, and listing types, you'll be better equipped to navigate the marketplace, submit your products, and optimize your presence for maximum visibility and success.</p>
+<a class="header" href="print.html#creating-an-aws-account" id="creating-an-aws-account"><h1>Creating an AWS Account</h1></a>
+<p>To get started with Amazon Web Services (AWS) and leverage the powerful cloud computing capabilities, follow these steps to create an AWS account:</p>
+<a class="header" href="print.html#1-visit-the-aws-sign-up-page" id="1-visit-the-aws-sign-up-page"><h2>1. Visit the AWS Sign-Up Page</h2></a>
+<p>Go to the <a href="https://aws.amazon.com/">AWS Sign-Up</a> page.</p>
+<a class="header" href="print.html#2-click-on-create-an-aws-account" id="2-click-on-create-an-aws-account"><h2>2. Click on &quot;Create an AWS Account&quot;</h2></a>
+<p>Locate the &quot;Create an AWS Account&quot; button on the page and click on it to initiate the account creation process.</p>
+<a class="header" href="print.html#3-provide-account-information" id="3-provide-account-information"><h2>3. Provide Account Information</h2></a>
+<p>Fill in the required information, including your email address and a strong password. Click &quot;Continue&quot; to proceed.</p>
+<a class="header" href="print.html#4-enter-contact-information" id="4-enter-contact-information"><h2>4. Enter Contact Information</h2></a>
+<p>Enter your contact information, including your name, address, and phone number. Ensure that the information is accurate and up-to-date. Click &quot;Continue.&quot;</p>
+<a class="header" href="print.html#5-payment-information" id="5-payment-information"><h2>5. Payment Information</h2></a>
+<p>Provide your payment information. AWS may charge a small amount (usually a few cents) to verify the validity of the provided payment method. Enter the necessary details and click &quot;Secure Submit.&quot;</p>
+<a class="header" href="print.html#6-identity-verification" id="6-identity-verification"><h2>6. Identity Verification</h2></a>
+<p>AWS uses a two-step identity verification process. Choose whether you want to receive a phone call or a text message with a verification code. Enter the code when received and click &quot;Verify code and continue.&quot;</p>
+<a class="header" href="print.html#7-select-a-support-plan" id="7-select-a-support-plan"><h2>7. Select a Support Plan</h2></a>
+<p>Choose a support plan that best fits your needs. AWS offers different plans, including a free plan with basic support. Review the details and select your preferred plan.</p>
+<a class="header" href="print.html#8-complete-registration" id="8-complete-registration"><h2>8. Complete Registration</h2></a>
+<p>Review the provided information, including the selected support plan and payment details. If everything looks correct, click &quot;Create Account and Continue.&quot;</p>
+<a class="header" href="print.html#9-confirmation" id="9-confirmation"><h2>9. Confirmation</h2></a>
+<p>Upon successful registration, AWS will display a confirmation message. You will also receive a confirmation email. Click the link in the email to verify your email address.</p>
+<a class="header" href="print.html#10-sign-in-to-your-aws-account" id="10-sign-in-to-your-aws-account"><h2>10. Sign In to Your AWS Account</h2></a>
+<p>Go back to the <a href="https://aws.amazon.com/">AWS Sign-In page</a> and sign in using the email address and password you provided during the registration process.</p>
+<p>Congratulations! You have now successfully created an AWS account and can begin exploring and utilizing the wide range of AWS services for your projects and applications.</p>
+<a class="header" href="print.html#preparing-your-saas-product-for-aws-marketplace-deployment" id="preparing-your-saas-product-for-aws-marketplace-deployment"><h1>Preparing Your SaaS Product for AWS Marketplace Deployment</h1></a>
+<p>If you're planning to deploy your Software as a Service (SaaS) product on the AWS Marketplace, there are specific steps to follow to ensure a smooth and successful deployment. Here's a tailored guide:</p>
+<a class="header" href="print.html#1-aws-marketplace-compatibility" id="1-aws-marketplace-compatibility"><h2>1. AWS Marketplace Compatibility</h2></a>
+<p>Ensure your SaaS product aligns with AWS Marketplace requirements and guidelines. Familiarize yourself with AWS Marketplace policies and ensure your product complies with security and quality standards.</p>
+<a class="header" href="print.html#2-aws-account-setup" id="2-aws-account-setup"><h2>2. AWS Account Setup</h2></a>
+<p>If not done already, create an AWS account. This account will be used to manage your product listings, handle transactions, and receive payments through AWS Marketplace.</p>
+<a class="header" href="print.html#3-optimize-for-aws-services" id="3-optimize-for-aws-services"><h2>3. Optimize for AWS Services</h2></a>
+<p>Tailor your SaaS product to leverage AWS services effectively. Utilize managed services such as Amazon RDS for databases, AWS Lambda for serverless functions, and other AWS offerings that enhance your product's performance and scalability.</p>
+<a class="header" href="print.html#4-subscription-model-selection" id="4-subscription-model-selection"><h2>4. Subscription Model Selection</h2></a>
+<p>Determine the most suitable subscription model for your SaaS product on AWS Marketplace. Choose from options such as hourly, monthly, annual, or a one-time fee. Align the pricing model with the value proposition of your SaaS offering.</p>
+<a class="header" href="print.html#5-aws-marketplace-seller-account" id="5-aws-marketplace-seller-account"><h2>5. AWS Marketplace Seller Account</h2></a>
+<p>Apply to become a seller on AWS Marketplace. Provide detailed information about your company, product, and agree to the terms and conditions set by AWS Marketplace.</p>
+<a class="header" href="print.html#6-product-submission-for-review" id="6-product-submission-for-review"><h2>6. Product Submission for Review</h2></a>
+<p>Once your seller account is approved, submit your SaaS product for review by AWS. Ensure your product meets the quality and security standards set by AWS Marketplace.</p>
+<a class="header" href="print.html#7-define-pricing-and-terms" id="7-define-pricing-and-terms"><h2>7. Define Pricing and Terms</h2></a>
+<p>Set clear and competitive pricing for your SaaS product. Clearly outline the terms and conditions for customers, including any usage restrictions or additional costs.</p>
+<a class="header" href="print.html#8-detailed-product-listing" id="8-detailed-product-listing"><h2>8. Detailed Product Listing</h2></a>
+<p>Craft a comprehensive product listing for AWS Marketplace. Include detailed descriptions, use cases, system requirements, and any other relevant information potential customers might need.</p>
+<a class="header" href="print.html#9-handle-transactions-and-billing-1" id="9-handle-transactions-and-billing-1"><h2>9. Handle Transactions and Billing</h2></a>
+<p>AWS Marketplace will manage transactions and billing on your behalf. Ensure your SaaS product's pricing aligns with the agreed-upon terms, and be prepared to receive payments through the AWS Marketplace system.</p>
+<a class="header" href="print.html#10-customer-support-integration" id="10-customer-support-integration"><h2>10. Customer Support Integration</h2></a>
+<p>Provide excellent customer support. Set up mechanisms to promptly respond to customer inquiries and assist with any issues they may encounter with your SaaS product.</p>
+<a class="header" href="print.html#11-optimization-and-promotion" id="11-optimization-and-promotion"><h2>11. Optimization and Promotion</h2></a>
+<p>Continuously optimize your SaaS product based on customer feedback. Consider investing in marketing and promotional efforts to increase the visibility of your product on the AWS Marketplace.</p>
+<a class="header" href="print.html#12-leverage-aws-partner-programs-1" id="12-leverage-aws-partner-programs-1"><h2>12. Leverage AWS Partner Programs</h2></a>
+<p>Explore AWS Partner Programs that can further promote your SaaS product and provide additional benefits. Engage with programs that align with your product's objectives and target audience.</p>
+<p>By following these steps, you'll be well-prepared to deploy your SaaS product on the AWS Marketplace, ensuring a seamless experience for both you as a seller and your customers.</p>
+<a class="header" href="print.html#setting-up-your-seller-account-on-aws-marketplace" id="setting-up-your-seller-account-on-aws-marketplace"><h1>Setting Up Your Seller Account on AWS Marketplace</h1></a>
+<p>To sell your products on the AWS Marketplace, you need to set up a seller account. Follow these steps to establish your seller account:</p>
+<a class="header" href="print.html#1-visit-aws-marketplace-seller-sign-up" id="1-visit-aws-marketplace-seller-sign-up"><h2>1. Visit AWS Marketplace Seller Sign-Up</h2></a>
+<p>Navigate to the <a href="https://aws.amazon.com/marketplace/management/signin">AWS Marketplace Seller Sign-Up</a> page.</p>
+<a class="header" href="print.html#2-sign-in-or-create-an-aws-account" id="2-sign-in-or-create-an-aws-account"><h2>2. Sign In or Create an AWS Account</h2></a>
+<p>If you already have an AWS account, sign in. If not, you will need to create one. Follow the instructions to provide the necessary information.</p>
+<a class="header" href="print.html#3-access-aws-marketplace-management-portal" id="3-access-aws-marketplace-management-portal"><h2>3. Access AWS Marketplace Management Portal</h2></a>
+<p>Once signed in, go to the AWS Marketplace Management Portal. You can find this under &quot;Management Portal&quot; in the AWS Console.</p>
+<a class="header" href="print.html#4-start-the-seller-registration-process" id="4-start-the-seller-registration-process"><h2>4. Start the Seller Registration Process</h2></a>
+<p>Look for an option to &quot;Start Seller Registration&quot; or a similar prompt within the Management Portal.</p>
+<a class="header" href="print.html#5-provide-company-information" id="5-provide-company-information"><h2>5. Provide Company Information</h2></a>
+<p>Fill in details about your company, including the legal business name, address, and contact information.</p>
+<a class="header" href="print.html#6-verify-identity-and-tax-information" id="6-verify-identity-and-tax-information"><h2>6. Verify Identity and Tax Information</h2></a>
+<p>AWS Marketplace requires identity verification and tax information. Follow the prompts to provide the necessary documentation to verify your identity and tax details.</p>
+<a class="header" href="print.html#7-accept-terms-and-conditions" id="7-accept-terms-and-conditions"><h2>7. Accept Terms and Conditions</h2></a>
+<p>Review the AWS Marketplace Seller Agreement and accept the terms and conditions. Make sure you understand the obligations and responsibilities outlined in the agreement.</p>
+<a class="header" href="print.html#8-complete-registration-1" id="8-complete-registration-1"><h2>8. Complete Registration</h2></a>
+<p>Complete the registration process by providing any additional information required. This may include information about the products you intend to sell.</p>
+<a class="header" href="print.html#9-wait-for-approval" id="9-wait-for-approval"><h2>9. Wait for Approval</h2></a>
+<p>After submitting your information, wait for AWS Marketplace to review and approve your seller account. This process may take some time.</p>
+<a class="header" href="print.html#10-access-seller-dashboard" id="10-access-seller-dashboard"><h2>10. Access Seller Dashboard</h2></a>
+<p>Once your seller account is approved, you can access the Seller Dashboard through the AWS Marketplace Management Portal. This dashboard allows you to manage your product listings, track performance, and handle transactions.</p>
+<a class="header" href="print.html#11-submit-products-for-review" id="11-submit-products-for-review"><h2>11. Submit Products for Review</h2></a>
+<p>After setting up your seller account, you can submit your products for review. Ensure your product listings comply with AWS Marketplace policies and quality standards.</p>
+<a class="header" href="print.html#12-monitor-account-performance" id="12-monitor-account-performance"><h2>12. Monitor Account Performance</h2></a>
+<p>Regularly monitor your seller account performance. Address any customer inquiries or issues promptly to maintain a positive seller reputation.</p>
+<p>Congratulations! You've successfully set up your seller account on AWS Marketplace. Now you can list and sell your products to customers using the robust AWS Marketplace platform.</p>
+<a class="header" href="print.html#saas-subscription" id="saas-subscription"><h1>SaaS Subscription</h1></a>
+<a class="header" href="print.html#listing-process" id="listing-process"><h2>Listing Process</h2></a>
+<a class="header" href="print.html#1-collect-assets" id="1-collect-assets"><h3>1. Collect Assets</h3></a>
+<p>Before submitting a product, you will need to provide:</p>
+<ul>
+<li>Product logo URL</li>
+<li>End User License Agreement (EULA) URL</li>
+<li>SaaS fulfillment URL (redirect page customers will be sent to after subscribing)</li>
+<li>Metadata</li>
+<li>Support information</li>
+</ul>
+<a class="header" href="print.html#2-submit-via-management-portal" id="2-submit-via-management-portal"><h3>2. Submit via Management Portal</h3></a>
+<p>Create a product page using a seller account that has access to the AWS Marketplace Management Portal (AMMP).</p>
+<a class="header" href="print.html#3-product-page-published-to-limited" id="3-product-page-published-to-limited"><h3>3. Product Page Published to Limited</h3></a>
+<p>The AWS MP Ops team will publish your submission as a limited product page visible to you and any AWS accounts you have requested to be whitelisted. Prices will be temporarily reduced to enable you to test the purchase flow without incurring high charges. The Ops team will send you the following via email to enable this testing:</p>
+<ul>
+<li>Product code</li>
+<li>SNS topic(s)</li>
+<li>Product page URL</li>
+</ul>
+<a class="header" href="print.html#integration-requirements" id="integration-requirements"><h2>Integration Requirements</h2></a>
+<a class="header" href="print.html#4-validate-new-customers" id="4-validate-new-customers"><h3>4. Validate New Customers</h3></a>
+<p>After a customer subscribes to your product, they will be redirected to the fulfillment URL. The redirect is a POST request &amp; includes a temporary token. Your app then needs to:</p>
+<ul>
+<li>Exchange the token for a customerID by calling ResolveCustomer in the AWS Marketplace Metering Service.</li>
+<li>After obtaining a customerID, persist it in your application for future calls.</li>
+</ul>
+<a class="header" href="print.html#5-onboard-new-customers" id="5-onboard-new-customers"><h3>5. Onboard New Customers</h3></a>
+<p>After successfully verifying a customer, onboard them onto your application. For example, have them fill out a form to create a new user account. Or, provide them with next steps to get access to the application.</p>
+<a class="header" href="print.html#6-sending-metering-records" id="6-sending-metering-records"><h3>6. Sending Metering Records</h3></a>
+<p>You use the BatchMeterUsage operation in the AWS Marketplace Metering Service to deliver metering records to AWS on behalf of your customers. We recommend using CloudTrail to monitor activity to ensure that billing information is being sent to AWS Marketplace. Keep in mind when sending metering records:</p>
+<ul>
+<li>Marketplace de-duplicates metering requests on the hour.</li>
+<li>Records sent every hour are cumulative.</li>
+<li>Best practice is to send records every hour, even if quantity is 0.</li>
+</ul>
+<a class="header" href="print.html#7-monitor-for-changes" id="7-monitor-for-changes"><h3>7. Monitor for Changes</h3></a>
+<p>Setup an SQS queue and subscribe to your product's SNS topic. This topic provides notifications about changes to customers' subscription. This enables you to know when to provide and revoke access for specific customers. Possible scenarios include: unsubscribes, successful subscription, &amp; failed subscription.</p>
+<a class="header" href="print.html#8-verify-successful-subscription" id="8-verify-successful-subscription"><h3>8. Verify Successful Subscription</h3></a>
+<p>After you receive a subscription notification with subscribe-success, the customer account is ready for metering. Records that you send before this notification aren't metered. Additionally, we recommend waiting for this message before launching resources on behalf of a customer.</p>
+<a class="header" href="print.html#listing-process-continued-after-completion-of-integration" id="listing-process-continued-after-completion-of-integration"><h2>Listing Process (continued after completion of integration)</h2></a>
+<a class="header" href="print.html#9-end-to-end-testing-with-aws-marketplace" id="9-end-to-end-testing-with-aws-marketplace"><h3>9. End-to-end testing with AWS Marketplace</h3></a>
+<p>After you have completed all the integration requirements and tested the solution, notify the AWS Marketplace Ops team. They will then test the solution by verifying you have successfully sent metered records via BatchMeterUsage and sufficiently onboard new customers. After end-to-end testing is complete, you will have the chance to review the product page with the original prices. After giving approval, the AWS Marketplace Ops team will make the product page live in the public catalog.</p>
+<p><img src="images/AWS%20Marketplace%20-%20SaaS%20Integration%20Guide.pdf.png" alt="architecture" /></p>
+<pre><code>                                SaaS-Subscription
+</code></pre>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+
+                
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+        <script>
+            $(document).ready(function() {
+                window.print();
+            })
+        </script>
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>
