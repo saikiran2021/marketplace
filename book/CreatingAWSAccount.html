@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Creating AWS Account - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="introduction.html"><strong>1.</strong> Introduction</a></li><li><a href="UnderstandAWSMarketplace.html"><strong>2.</strong> Understand AWS Marketplace</a></li><li><a href="CreatingAWSAccount.html" class="active"><strong>3.</strong> Creating AWS Account</a></li><li><a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html"><strong>4.</strong> Preparing Your SaaS Product for AWS Marketplace Deployment</a></li><li><a href="SetUpSellerAccount.html"><strong>5.</strong> Set Up Seller Account</a></li><li><a href="SaaSSubscription.html"><strong>6.</strong> SaaSSubscription</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="CreatingAWSAccount.html#creating-an-aws-account" id="creating-an-aws-account"><h1>Creating an AWS Account</h1></a>
+<p>To get started with Amazon Web Services (AWS) and leverage the powerful cloud computing capabilities, follow these steps to create an AWS account:</p>
+<a class="header" href="CreatingAWSAccount.html#1-visit-the-aws-sign-up-page" id="1-visit-the-aws-sign-up-page"><h2>1. Visit the AWS Sign-Up Page</h2></a>
+<p>Go to the <a href="https://aws.amazon.com/">AWS Sign-Up</a> page.</p>
+<a class="header" href="CreatingAWSAccount.html#2-click-on-create-an-aws-account" id="2-click-on-create-an-aws-account"><h2>2. Click on &quot;Create an AWS Account&quot;</h2></a>
+<p>Locate the &quot;Create an AWS Account&quot; button on the page and click on it to initiate the account creation process.</p>
+<a class="header" href="CreatingAWSAccount.html#3-provide-account-information" id="3-provide-account-information"><h2>3. Provide Account Information</h2></a>
+<p>Fill in the required information, including your email address and a strong password. Click &quot;Continue&quot; to proceed.</p>
+<a class="header" href="CreatingAWSAccount.html#4-enter-contact-information" id="4-enter-contact-information"><h2>4. Enter Contact Information</h2></a>
+<p>Enter your contact information, including your name, address, and phone number. Ensure that the information is accurate and up-to-date. Click &quot;Continue.&quot;</p>
+<a class="header" href="CreatingAWSAccount.html#5-payment-information" id="5-payment-information"><h2>5. Payment Information</h2></a>
+<p>Provide your payment information. AWS may charge a small amount (usually a few cents) to verify the validity of the provided payment method. Enter the necessary details and click &quot;Secure Submit.&quot;</p>
+<a class="header" href="CreatingAWSAccount.html#6-identity-verification" id="6-identity-verification"><h2>6. Identity Verification</h2></a>
+<p>AWS uses a two-step identity verification process. Choose whether you want to receive a phone call or a text message with a verification code. Enter the code when received and click &quot;Verify code and continue.&quot;</p>
+<a class="header" href="CreatingAWSAccount.html#7-select-a-support-plan" id="7-select-a-support-plan"><h2>7. Select a Support Plan</h2></a>
+<p>Choose a support plan that best fits your needs. AWS offers different plans, including a free plan with basic support. Review the details and select your preferred plan.</p>
+<a class="header" href="CreatingAWSAccount.html#8-complete-registration" id="8-complete-registration"><h2>8. Complete Registration</h2></a>
+<p>Review the provided information, including the selected support plan and payment details. If everything looks correct, click &quot;Create Account and Continue.&quot;</p>
+<a class="header" href="CreatingAWSAccount.html#9-confirmation" id="9-confirmation"><h2>9. Confirmation</h2></a>
+<p>Upon successful registration, AWS will display a confirmation message. You will also receive a confirmation email. Click the link in the email to verify your email address.</p>
+<a class="header" href="CreatingAWSAccount.html#10-sign-in-to-your-aws-account" id="10-sign-in-to-your-aws-account"><h2>10. Sign In to Your AWS Account</h2></a>
+<p>Go back to the <a href="https://aws.amazon.com/">AWS Sign-In page</a> and sign in using the email address and password you provided during the registration process.</p>
+<p>Congratulations! You have now successfully created an AWS account and can begin exploring and utilizing the wide range of AWS services for your projects and applications.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="UnderstandAWSMarketplace.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="UnderstandAWSMarketplace.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

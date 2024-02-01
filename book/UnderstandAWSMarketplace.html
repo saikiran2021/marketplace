@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Understand AWS Marketplace - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="introduction.html"><strong>1.</strong> Introduction</a></li><li><a href="UnderstandAWSMarketplace.html" class="active"><strong>2.</strong> Understand AWS Marketplace</a></li><li><a href="CreatingAWSAccount.html"><strong>3.</strong> Creating AWS Account</a></li><li><a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html"><strong>4.</strong> Preparing Your SaaS Product for AWS Marketplace Deployment</a></li><li><a href="SetUpSellerAccount.html"><strong>5.</strong> Set Up Seller Account</a></li><li><a href="SaaSSubscription.html"><strong>6.</strong> SaaSSubscription</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="UnderstandAWSMarketplace.html#understand-aws-marketplace" id="understand-aws-marketplace"><h1>Understand AWS Marketplace</h1></a>
+<p>AWS Marketplace is a platform provided by Amazon Web Services (AWS) that allows software vendors to sell their products and solutions to AWS customers. Before venturing into AWS Marketplace, it is crucial to comprehend its key aspects:</p>
+<a class="header" href="UnderstandAWSMarketplace.html#overview" id="overview"><h2>Overview</h2></a>
+<p>AWS Marketplace serves as a digital catalog that offers a wide array of software listings, including Amazon Machine Images (AMIs), Software as a Service (SaaS), and Application Programming Interfaces (APIs). This marketplace facilitates the discovery, procurement, and deployment of various software solutions directly from AWS.</p>
+<a class="header" href="UnderstandAWSMarketplace.html#policies-and-guidelines" id="policies-and-guidelines"><h2>Policies and Guidelines</h2></a>
+<p>To navigate AWS Marketplace successfully, it's essential to familiarize yourself with the platform's policies and guidelines. These include compliance standards, security requirements, and best practices to ensure that your products align with AWS standards.</p>
+<a class="header" href="UnderstandAWSMarketplace.html#pricing-models" id="pricing-models"><h2>Pricing Models</h2></a>
+<p>Understand the diverse pricing models available on AWS Marketplace. Vendors can choose from options such as hourly, monthly, annual subscriptions, or one-time fees. Carefully consider the pricing strategy to reflect the value of your product and accommodate AWS usage costs.</p>
+<a class="header" href="UnderstandAWSMarketplace.html#software-listing-types" id="software-listing-types"><h2>Software Listing Types</h2></a>
+<p>Differentiate between various software listing types available on AWS Marketplace. AMIs represent virtual machine images, while SaaS and APIs cater to cloud-native applications. Knowing these distinctions will help you tailor your product to the appropriate listing type.</p>
+<a class="header" href="UnderstandAWSMarketplace.html#aws-account-integration" id="aws-account-integration"><h2>AWS Account Integration</h2></a>
+<p>Before engaging with AWS Marketplace, create an AWS account if you haven't done so already. Your AWS account will serve as the central hub for managing your listings, monitoring performance, and receiving payments for your products.</p>
+<a class="header" href="UnderstandAWSMarketplace.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>A comprehensive understanding of AWS Marketplace is essential for a successful engagement with the platform. By grasping its policies, pricing models, and listing types, you'll be better equipped to navigate the marketplace, submit your products, and optimize your presence for maximum visibility and success.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="introduction.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="CreatingAWSAccount.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="introduction.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="CreatingAWSAccount.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

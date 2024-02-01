@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Preparing Your SaaS Product for AWS Marketplace Deployment - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="introduction.html"><strong>1.</strong> Introduction</a></li><li><a href="UnderstandAWSMarketplace.html"><strong>2.</strong> Understand AWS Marketplace</a></li><li><a href="CreatingAWSAccount.html"><strong>3.</strong> Creating AWS Account</a></li><li><a href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html" class="active"><strong>4.</strong> Preparing Your SaaS Product for AWS Marketplace Deployment</a></li><li><a href="SetUpSellerAccount.html"><strong>5.</strong> Set Up Seller Account</a></li><li><a href="SaaSSubscription.html"><strong>6.</strong> SaaSSubscription</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#preparing-your-saas-product-for-aws-marketplace-deployment" id="preparing-your-saas-product-for-aws-marketplace-deployment"><h1>Preparing Your SaaS Product for AWS Marketplace Deployment</h1></a>
+<p>If you're planning to deploy your Software as a Service (SaaS) product on the AWS Marketplace, there are specific steps to follow to ensure a smooth and successful deployment. Here's a tailored guide:</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#1-aws-marketplace-compatibility" id="1-aws-marketplace-compatibility"><h2>1. AWS Marketplace Compatibility</h2></a>
+<p>Ensure your SaaS product aligns with AWS Marketplace requirements and guidelines. Familiarize yourself with AWS Marketplace policies and ensure your product complies with security and quality standards.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#2-aws-account-setup" id="2-aws-account-setup"><h2>2. AWS Account Setup</h2></a>
+<p>If not done already, create an AWS account. This account will be used to manage your product listings, handle transactions, and receive payments through AWS Marketplace.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#3-optimize-for-aws-services" id="3-optimize-for-aws-services"><h2>3. Optimize for AWS Services</h2></a>
+<p>Tailor your SaaS product to leverage AWS services effectively. Utilize managed services such as Amazon RDS for databases, AWS Lambda for serverless functions, and other AWS offerings that enhance your product's performance and scalability.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#4-subscription-model-selection" id="4-subscription-model-selection"><h2>4. Subscription Model Selection</h2></a>
+<p>Determine the most suitable subscription model for your SaaS product on AWS Marketplace. Choose from options such as hourly, monthly, annual, or a one-time fee. Align the pricing model with the value proposition of your SaaS offering.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#5-aws-marketplace-seller-account" id="5-aws-marketplace-seller-account"><h2>5. AWS Marketplace Seller Account</h2></a>
+<p>Apply to become a seller on AWS Marketplace. Provide detailed information about your company, product, and agree to the terms and conditions set by AWS Marketplace.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#6-product-submission-for-review" id="6-product-submission-for-review"><h2>6. Product Submission for Review</h2></a>
+<p>Once your seller account is approved, submit your SaaS product for review by AWS. Ensure your product meets the quality and security standards set by AWS Marketplace.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#7-define-pricing-and-terms" id="7-define-pricing-and-terms"><h2>7. Define Pricing and Terms</h2></a>
+<p>Set clear and competitive pricing for your SaaS product. Clearly outline the terms and conditions for customers, including any usage restrictions or additional costs.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#8-detailed-product-listing" id="8-detailed-product-listing"><h2>8. Detailed Product Listing</h2></a>
+<p>Craft a comprehensive product listing for AWS Marketplace. Include detailed descriptions, use cases, system requirements, and any other relevant information potential customers might need.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#9-handle-transactions-and-billing" id="9-handle-transactions-and-billing"><h2>9. Handle Transactions and Billing</h2></a>
+<p>AWS Marketplace will manage transactions and billing on your behalf. Ensure your SaaS product's pricing aligns with the agreed-upon terms, and be prepared to receive payments through the AWS Marketplace system.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#10-customer-support-integration" id="10-customer-support-integration"><h2>10. Customer Support Integration</h2></a>
+<p>Provide excellent customer support. Set up mechanisms to promptly respond to customer inquiries and assist with any issues they may encounter with your SaaS product.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#11-optimization-and-promotion" id="11-optimization-and-promotion"><h2>11. Optimization and Promotion</h2></a>
+<p>Continuously optimize your SaaS product based on customer feedback. Consider investing in marketing and promotional efforts to increase the visibility of your product on the AWS Marketplace.</p>
+<a class="header" href="PreparingYourSaaSProductforAWSMarketplaceDeployment.html#12-leverage-aws-partner-programs" id="12-leverage-aws-partner-programs"><h2>12. Leverage AWS Partner Programs</h2></a>
+<p>Explore AWS Partner Programs that can further promote your SaaS product and provide additional benefits. Engage with programs that align with your product's objectives and target audience.</p>
+<p>By following these steps, you'll be well-prepared to deploy your SaaS product on the AWS Marketplace, ensuring a seamless experience for both you as a seller and your customers.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="CreatingAWSAccount.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="SetUpSellerAccount.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="CreatingAWSAccount.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="SetUpSellerAccount.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>
